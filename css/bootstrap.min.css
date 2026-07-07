@@ -637,7 +637,7 @@ progress {
 .container-md,
 .container-lg,
 .container-xl,
-.container-xxl {
+.container-6xl {
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
@@ -690,7 +690,7 @@ progress {
     .container-md,
     .container-lg,
     .container-xl,
-    .container-xxl {
+    .container-6xl {
         max-width: 1320px
     }
 }
@@ -4449,7 +4449,7 @@ fieldset:disabled .btn {
 .navbar>.container-md,
 .navbar>.container-lg,
 .navbar>.container-xl,
-.navbar>.container-xxl {
+.navbar>.container-6xl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
