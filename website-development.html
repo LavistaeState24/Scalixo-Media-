@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Website Development - Scalixo Media</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="website development, web design, responsive website, business website, landing page, Scalixo Media" name="keywords">
+    <meta content="Website development services by Scalixo Media for responsive, SEO-friendly, conversion-focused business websites, landing pages, portfolio sites, and custom web solutions." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .web-hero-card {
+            background: linear-gradient(135deg, rgba(179,166,156,.18), rgba(255,255,255,.95));
+            border: 1px solid rgba(0,0,0,.06);
+            border-radius: 32px;
+            padding: 34px;
+            box-shadow: 0 20px 60px rgba(0,0,0,.08);
+        }
+        .browser-mockup {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 24px 70px rgba(0,0,0,.12);
+            border: 1px solid rgba(0,0,0,.06);
+        }
+        .browser-top {
+            height: 48px;
+            background: #f5f1ec;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 18px;
+        }
+        .browser-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            opacity: .75;
+        }
+        .browser-body {
+            padding: 30px;
+        }
+        .mock-line {
+            height: 14px;
+            border-radius: 20px;
+            background: rgba(0,0,0,.08);
+            margin-bottom: 14px;
+        }
+        .mock-box {
+            min-height: 170px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--primary), #2D3748);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 44px;
+        }
+        .feature-tile, .build-card, .stack-card, .result-box, .timeline-card, .Faq-card {
+            background: #fff;
+            border: 1px solid rgba(0,0,0,.06);
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0,0,0,.06);
+            height: 100%;
+            transition: .3s ease;
+        }
+        .feature-tile:hover, .build-card:hover, .stack-card:hover, .result-box:hover, .timeline-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 55px rgba(0,0,0,.10);
+        }
+        .feature-tile {
+            padding: 32px;
+        }
+        .tile-icon, .build-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 20px;
+            background: var(--primary);
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+        .build-card {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .build-card::after {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(179,166,156,.12);
+            right: -38px;
+            top: -38px;
+        }
+        .stack-card {
+            padding: 24px 18px;
+            text-align: center;
+        }
+        .stack-card i {
+            font-size: 34px;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        .timeline-card {
+            padding: 28px;
+        }
+        .timeline-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+        .result-box {
+            padding: 28px;
+            text-align: center;
+        }
+        .result-box i {
+            font-size: 30px;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        .cta-panel {
+            background: linear-gradient(135deg, #2D3748, #151b25);
+            border-radius: 34px;
+            padding: 56px 36px;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+        .cta-panel::before {
+            content: "";
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: rgba(179,166,156,.22);
+            right: -80px;
+            top: -80px;
+        }
+        .accordion-button:focus { box-shadow: none; }
+        @media (max-width: 991px) {
+            .page-header { padding-top: 110px; padding-bottom: 70px; }
+            .display-5, .section-title { font-size: 2rem; }
+            .web-hero-card, .cta-panel { padding: 28px 22px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 fixed-top">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Scalixo<span style="font-weight:500;">Media</span></h1>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu border-0 shadow rounded-3 mt-2">
+                                <a href="social-media-marketing.html" class="dropdown-item">Social Media Marketing</a>
+                                <a href="performance-marketing.html" class="dropdown-item">Performance Marketing</a>
+                                <a href="seo.html" class="dropdown-item">Search Engine Optimization</a>
+                                <a href="website-development.html" class="dropdown-item active">Website Development</a>
+                                <a href="branding.html" class="dropdown-item">Branding & Identity Design</a>
+                                <a href="influencer-marketing.html" class="dropdown-item">Influencer Marketing</a>
+                            </div>
+                        </div>
+                        <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                        <a href="Faq.html" class="nav-item nav-link">Faq</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="contact.html" class="btn btn-dark-pill ms-lg-4">Get Free Consultation</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary page-header">
+                <div class="container text-center">
+                    <h1 class="text-white animated zoomIn mt-5">Website Development</h1>
+                    <p class="text-white mb-0 animated fadeInUp">Fast, responsive, and conversion-focused websites built for business growth.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Website Hero Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Website Development</div>
+                        <h2 class="display-5 mb-4">Websites That Look Premium And Convert Visitors Into Customers</h2>
+                        <p class="lead-copy mb-4">
+                            Scalixo Media designs and develops modern business websites that are responsive, SEO-friendly,
+                            fast-loading, and built to generate enquiries. We don't just create pages; we create digital
+                            experiences that help your brand look professional and grow online.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-dark-pill py-3 px-5" href="contact.html">Start Your Website</a>
+                            <a class="btn btn-light-pill py-3 px-5" href="#website-types">Explore Website Types</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.2s">
+                        <div class="web-hero-card">
+                            <div class="browser-mockup">
+                                <div class="browser-top">
+                                    <span class="browser-dot"></span>
+                                    <span class="browser-dot"></span>
+                                    <span class="browser-dot"></span>
+                                </div>
+                                <div class="browser-body">
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-7">
+                                            <div class="mock-line" style="width:80%;"></div>
+                                            <div class="mock-line" style="width:65%;"></div>
+                                            <div class="mock-line" style="width:90%;"></div>
+                                            <div class="mock-line" style="width:50%;"></div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="mock-box"><i class="fa fa-code"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-3 mt-2">
+                                        <div class="col-4"><div class="mock-line" style="height:58px;"></div></div>
+                                        <div class="col-4"><div class="mock-line" style="height:58px;"></div></div>
+                                        <div class="col-4"><div class="mock-line" style="height:58px;"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Website Hero End -->
+
+        <!-- Why Website Matters Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Why It Matters</div>
+                        <h2 class="mb-4">Your Website Is Your Digital Salesperson</h2>
+                        <p>
+                            Before customers call, visit, or buy, they usually check your website. A slow, outdated, or unclear website can reduce trust and lose leads.
+                        </p>
+                        <p>
+                            We build websites that explain your value clearly, guide visitors toward action, and support your marketing campaigns across SEO, ads, and social media.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="feature-tile">
+                                    <div class="tile-icon"><i class="fa fa-mobile-alt"></i></div>
+                                    <h5>Mobile-First Design</h5>
+                                    <p class="mb-0">Every page is designed to look clean and work smoothly on phones, tablets, and desktops.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="feature-tile">
+                                    <div class="tile-icon"><i class="fa fa-bolt"></i></div>
+                                    <h5>Fast Loading</h5>
+                                    <p class="mb-0">Optimized layouts, images, and code to improve speed and user experience.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="feature-tile">
+                                    <div class="tile-icon"><i class="fa fa-search"></i></div>
+                                    <h5>SEO Friendly</h5>
+                                    <p class="mb-0">Built with proper structure, headings, content flow, and search-friendly foundations.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="feature-tile">
+                                    <div class="tile-icon"><i class="fa fa-mouse-pointer"></i></div>
+                                    <h5>Conversion Focused</h5>
+                                    <p class="mb-0">Clear CTAs, strong content placement, and lead-generation sections that drive action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why Website Matters End -->
+
+        <!-- Website Types Start -->
+        <div class="container-xxl py-6" id="website-types">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">What We Build</div>
+                    <h2 class="mb-3">Website Solutions For Every Business Goal</h2>
+                    <p class="lead-copy">From simple business websites to high-converting landing pages, we build websites that match your brand, audience, and growth plan.</p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-building"></i></div>
+                            <h5>Business Websites</h5>
+                            <p class="mb-0">Professional websites for agencies, consultants, local businesses, and service providers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-bullseye"></i></div>
+                            <h5>Landing Pages</h5>
+                            <p class="mb-0">Campaign-focused pages designed for ads, lead generation, appointments, and conversions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-shopping-cart"></i></div>
+                            <h5>E-commerce Websites</h5>
+                            <p class="mb-0">Online store layouts built to showcase products, build trust, and support purchase journeys.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-user-tie"></i></div>
+                            <h5>Portfolio Websites</h5>
+                            <p class="mb-0">Clean portfolio experiences for creators, professionals, agencies, and growing brands.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-calendar-check"></i></div>
+                            <h5>Booking Websites</h5>
+                            <p class="mb-0">Appointment-focused websites for salons, clinics, consultants, studios, and service businesses.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="build-card">
+                            <div class="build-icon"><i class="fa fa-layer-group"></i></div>
+                            <h5>Custom Web Pages</h5>
+                            <p class="mb-0">Custom sections, campaign pages, brand pages, and marketing pages based on your requirement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Website Types End -->
+
+        <!-- Our Development Process Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">Our Process</div>
+                    <h2 class="mb-3">From Idea To Live Website</h2>
+                    <p class="lead-copy">A simple, clear, and result-focused website development process.</p>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="timeline-card">
+                            <div class="timeline-number">01</div>
+                            <h5>Discover</h5>
+                            <p class="mb-0">We understand your business, audience, goals, competitors, and website requirements.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="timeline-card">
+                            <div class="timeline-number">02</div>
+                            <h5>Plan & Design</h5>
+                            <p class="mb-0">We create the page structure, content flow, layout direction, and visual experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="timeline-card">
+                            <div class="timeline-number">03</div>
+                            <h5>Develop</h5>
+                            <p class="mb-0">We build a responsive, clean, and user-friendly website with strong performance basics.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="timeline-card">
+                            <div class="timeline-number">04</div>
+                            <h5>Test & Launch</h5>
+                            <p class="mb-0">We test responsiveness, links, forms, speed basics, and launch your website confidently.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Development Process End -->
+
+        <!-- Tech & Features Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Website Features</div>
+                        <h2 class="mb-4">Everything Your Website Needs To Perform Better</h2>
+                        <p>
+                            Your website should not only look good. It should load fast, communicate clearly, work across devices, and support your marketing strategy.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.1s"><div class="stack-card"><i class="fa fa-mobile-alt"></i><h6>Responsive</h6></div></div>
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.2s"><div class="stack-card"><i class="fa fa-tachometer-alt"></i><h6>Speed Optimized</h6></div></div>
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.3s"><div class="stack-card"><i class="fa fa-search"></i><h6>SEO Ready</h6></div></div>
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.4s"><div class="stack-card"><i class="fa fa-edit"></i><h6>Clean Content</h6></div></div>
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.5s"><div class="stack-card"><i class="fa fa-envelope-open-text"></i><h6>Lead Forms</h6></div></div>
+                            <div class="col-md-4 col-6 wow fadeIn" data-wow-delay="0.6s"><div class="stack-card"><i class="fa fa-lock"></i><h6>Secure Setup</h6></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tech & Features End -->
+
+        <!-- Results Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">Results You Can Expect</div>
+                    <h2 class="mb-3">A Website Built For Growth</h2>
+                    <p class="lead-copy">A strong website improves trust, supports marketing, and helps visitors take action faster.</p>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="result-box"><i class="fa fa-eye"></i><h5>Stronger First Impression</h5><p class="mb-0">Make your brand look professional from the first visit.</p></div></div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="result-box"><i class="fa fa-phone-alt"></i><h5>More Enquiries</h5><p class="mb-0">Clear CTAs and forms help convert visitors into leads.</p></div></div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="result-box"><i class="fa fa-chart-line"></i><h5>Better Campaign ROI</h5><p class="mb-0">A good landing experience improves ad and social media results.</p></div></div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="result-box"><i class="fa fa-handshake"></i><h5>Higher Trust</h5><p class="mb-0">Professional design and clear content increase customer confidence.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Results End -->
+
+        <!-- Faq Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">Website Development Faq</div>
+                    <h2 class="mb-3">Common Questions Before Starting A Website</h2>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="webFaqAccordion">
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header" id="webFaqOne">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#webCollapseOne">
+                                        <i class="fa fa-laptop-code text-primary me-3"></i> What type of websites do you develop?
+                                    </button>
+                                </h2>
+                                <div id="webCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#webFaqAccordion">
+                                    <div class="accordion-body">We develop business websites, service websites, portfolio websites, landing pages, booking websites, and custom marketing pages.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="accordion-header" id="webFaqTwo">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#webCollapseTwo">
+                                        <i class="fa fa-mobile-alt text-primary me-3"></i> Will my website be mobile responsive?
+                                    </button>
+                                </h2>
+                                <div id="webCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#webFaqAccordion">
+                                    <div class="accordion-body">Yes. Every website is created with a responsive design so it works properly on mobile, tablet, laptop, and desktop screens.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded wow fadeInUp" data-wow-delay="0.3s">
+                                <h2 class="accordion-header" id="webFaqThree">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#webCollapseThree">
+                                        <i class="fa fa-search text-primary me-3"></i> Do you make SEO-friendly websites?
+                                    </button>
+                                </h2>
+                                <div id="webCollapseThree" class="accordion-collapse collapse" data-bs-parent="#webFaqAccordion">
+                                    <div class="accordion-body">Yes. We structure pages with proper headings, clean content flow, meta-friendly sections, fast-loading basics, and search-friendly design foundations.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="accordion-header" id="webFaqFour">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#webCollapseFour">
+                                        <i class="fa fa-edit text-primary me-3"></i> Can you write website content too?
+                                    </button>
+                                </h2>
+                                <div id="webCollapseFour" class="accordion-collapse collapse" data-bs-parent="#webFaqAccordion">
+                                    <div class="accordion-body">Yes. We can create page-wise content for your home page, about page, services, portfolio, Faq, contact page, and landing pages.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm rounded wow fadeInUp" data-wow-delay="0.5s">
+                                <h2 class="accordion-header" id="webFaqFive">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#webCollapseFive">
+                                        <i class="fa fa-comments text-primary me-3"></i> How do we get started?
+                                    </button>
+                                </h2>
+                                <div id="webCollapseFive" class="accordion-collapse collapse" data-bs-parent="#webFaqAccordion">
+                                    <div class="accordion-body">Contact us for a free consultation. We will understand your business, suggest the right website structure, and create a clear plan for design and development.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Faq End -->
+
+        <!-- CTA Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="cta-panel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row align-items-center position-relative">
+                        <div class="col-lg-8">
+                            <div class="section-label mb-3 text-white border-white">Build Your Website</div>
+                            <h2 class="text-white mb-3">Ready To Create A Website That Builds Trust And Generates Leads?</h2>
+                            <p class="mb-0 text-white-50">Let's design a professional website that represents your brand, supports your marketing, and helps customers take action.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                            <a href="contact.html" class="btn btn-light-pill py-3 px-5">Start Your Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="mb-4 fw-bold">ScalixoMedia</h4>
+                        <p class="mb-4">Grow your brand. Dominate your market. Scale with Scalixo Media, a full-service
+                            digital marketing agency focused on measurable business growth.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-dark btn-social me-2" href="#"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="#services">Services</a>
+                        <a class="btn btn-link" href="#portfolio">Portfolio</a>
+                        <a class="btn btn-link" href="Faq.html">Faq</a>
+                        <a class="btn btn-link" href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Services</h5>
+                        <a class="btn btn-link" href="social-media-marketing.html">Social Media Marketing</a>
+                        <a class="btn btn-link" href="performance-marketing.html">Performance Marketing</a>
+                        <a class="btn btn-link" href="seo.html">SEO</a>
+                        <a class="btn btn-link" href="website-development.html">Website Development</a>
+                        <a class="btn btn-link" href="branding.html">Branding</a>
+                        <a class="btn btn-link" href="influencer-marketing.html">Influencer Marketing</a>
+                        <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        <a class="btn btn-link" href="terms-and-conditions.html">Terms & Conditions</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Get In Touch</h5>
+                        <p><strong>Address</strong><br>301, 3rd Floor, Harvy Complex,<br>Subhash Chowk, Gurukul
+                            Rd,<br>Memnagar, Ahmedabad, Gujarat 380052</p>
+                        <p><strong>Phone</strong><br>+91 93287 92160</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright border-top pt-4">
+                    <div class="row">
+                        <div class="col-lg-6 text-start mb-2">© 2026 <strong>Scalixo Media</strong>. All Rights
+                            Reserved.
+                        </div>
+                        <div class="col-lg-6 text-end">Designed & Developed by <strong>Lavista Marketing</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
