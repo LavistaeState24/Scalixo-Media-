@@ -32,7 +32,7 @@ body {
 
 .hero-area {
     padding: 130px 0 85px;
-    background: linear-gradient(180deg, #fff 0%, #faf7f2 100%);
+    /* background: linear-gradient(180deg, #fff 0%, #faf7f2 100%); */
 }
 
 .section-soft {
@@ -485,8 +485,8 @@ body {
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    border: 1px solid transparent;
     transform: scale(.85);
+    border-radius: 18px;
     transition: .5s;
 }
 
