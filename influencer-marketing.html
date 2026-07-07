@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Scalixo Media - Consulting HTML Template</title>
+    <title>Influencer Marketing - Scalixo Media</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Influencer marketing services by Scalixo Media for creator collaborations, reels campaigns, local influencer promotions, brand awareness, engagement, and trust-building growth." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,12 +30,100 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .service-card, .platform-card, .result-card, .portfolio-card {
+            background: #fff;
+            border-radius: 22px;
+            border: 1px solid rgba(0,0,0,.06);
+            box-shadow: 0 10px 35px rgba(0,0,0,.06);
+            transition: .3s ease;
+            height: 100%;
+        }
+        .service-card:hover, .platform-card:hover, .result-card:hover, .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 50px rgba(0,0,0,.10);
+        }
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+        .platform-card {
+            padding: 26px 18px;
+            text-align: center;
+        }
+        .platform-card i {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        .process-step {
+            position: relative;
+            padding: 30px;
+            border-radius: 22px;
+            background: #fff;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,.06);
+        }
+        .step-number {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+        .result-card {
+            padding: 26px;
+        }
+        .result-card i {
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 14px;
+        }
+        .portfolio-card {
+            padding: 32px;
+            text-align: center;
+        }
+        .portfolio-card .play-icon {
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 22px;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        @media (max-width: 991px) {
+            .page-header { padding-top: 110px; padding-bottom: 70px; }
+            .section-title, .display-5 { font-size: 2rem; }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -58,7 +147,7 @@
                         <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
-                            <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
                                 Services
                             </a>
 
@@ -86,15 +175,15 @@
                                     Branding & Identity Design
                                 </a>
 
-                                <a href="influencer-marketing.html" class="dropdown-item">
+                                <a href="influencer-marketing.html" class="dropdown-item active">
                                     Influencer Marketing
                                 </a>
                             </div>
                         </div>
 
                         <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                        <a href="faq.html" class="nav-item nav-link">FAQ</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="Faq.html" class="nav-item nav-link">Faq</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="contact.html" class="btn btn-dark-pill ms-lg-4">Get Free Consultation</a>
                 </div>
@@ -102,126 +191,230 @@
 
             <div class="container-xxl bg-primary page-header">
                 <div class="container text-center">
-                    <h1 class="text-white animated zoomIn  mt-5">Our Team</h1>
-                   
+                    <h1 class="text-white animated zoomIn mt-5">Influencer Marketing</h1>
+                    <p class="text-white mb-0 animated fadeInUp">Creator-led campaigns that build trust, awareness, engagement, and business growth.</p>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
 
-        <!-- Team Start -->
+        <!-- Influencer Marketing Hero Start -->
         <div class="container-xxl py-6">
             <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Team</div>
-                    <h2 class="mb-5">Meet Our Team Members</h2>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Influencer Marketing</div>
+                        <h2 class="display-5 mb-4">Creator-Led Campaigns That Build Trust & Drive Action</h2>
+                        <p class="lead-copy mb-4">
+                            Scalixo Media helps brands grow through strategic influencer marketing campaigns that create awareness,
+                            social proof, engagement, and qualified enquiries. We connect your business with the right creators,
+                            manage the campaign flow, and turn creator content into a powerful brand growth asset.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-dark-pill py-3 px-5" href="contact.html">Plan Influencer Campaign</a>
+                            <a class="btn btn-light-pill py-3 px-5" href="#services">Explore Services</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center wow zoomIn" data-wow-delay="0.2s">
+                        <img class="img-fluid rounded" src="img/influncer.png" alt="Influencer marketing campaign strategy by Scalixo Media">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Influencer Marketing Hero End -->
+
+
+        <!-- Why Influencer Marketing Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Why It Matters</div>
+                        <h2 class="mb-4">People Trust People More Than Ads</h2>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="lead-copy mb-3">
+                            Today's audience does not connect with brands only through polished ads. They trust real people,
+                            real experiences, and authentic recommendations. Influencer marketing helps your brand enter the
+                            conversation naturally through creators your audience already follows and trusts.
+                        </p>
+                        <p class="lead-copy mb-0">
+                            At Scalixo Media, we do not randomly pick influencers. We plan campaigns based on your business goal,
+                            target audience, location, creator fit, content quality, and measurable campaign outcomes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why Influencer Marketing End -->
+
+
+        <!-- What We Offer Start -->
+        <div class="container-xxl py-6" id="services">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">What We Offer</div>
+                    <h2 class="mb-3">Complete Influencer Marketing Management</h2>
+                    <p class="lead-copy mb-5">From creator shortlisting to campaign execution, content approvals, posting, tracking, and reporting, we manage the complete influencer campaign process.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-users"></i></div><h5>Influencer Research & Shortlisting</h5><p class="lead-copy mb-0">We identify relevant creators based on niche, audience type, location, content quality, and brand fit.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-bullseye"></i></div><h5>Campaign Strategy</h5><p class="lead-copy mb-0">We plan the campaign objective, messaging, deliverables, content format, timeline, and expected outcomes.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-handshake"></i></div><h5>Creator Coordination</h5><p class="lead-copy mb-0">We handle influencer communication, briefing, collaboration flow, approvals, and posting coordination.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-video"></i></div><h5>Reels & Video Campaigns</h5><p class="lead-copy mb-0">Creator-led reels and videos designed to increase reach, trust, engagement, and audience action.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-camera-retro"></i></div><h5>Product & Brand Promotions</h5><p class="lead-copy mb-0">Promotional creator content for launches, offers, events, services, products, and brand awareness campaigns.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s"><div class="service-card p-4"><div class="service-icon"><i class="fa fa-chart-line"></i></div><h5>Reporting & Performance Review</h5><p class="lead-copy mb-0">We review reach, engagement, saves, shares, profile visits, enquiries, and overall campaign response.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- What We Offer End -->
+
+
+        <!-- Influencer Types Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Creator Categories</div>
+                    <h2 class="mb-5">Influencer Campaigns For Every Brand Goal</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.1s"><div class="platform-card"><i class="fa fa-user"></i><h6 class="mb-0">Micro Influencers</h6></div></div>
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.2s"><div class="platform-card"><i class="fa fa-star"></i><h6 class="mb-0">Macro Influencers</h6></div></div>
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.3s"><div class="platform-card"><i class="fa fa-map-marker-alt"></i><h6 class="mb-0">Local Creators</h6></div></div>
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.4s"><div class="platform-card"><i class="fa fa-shopping-bag"></i><h6 class="mb-0">Lifestyle Creators</h6></div></div>
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.5s"><div class="platform-card"><i class="fa fa-utensils"></i><h6 class="mb-0">Food & Cafe Creators</h6></div></div>
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.6s"><div class="platform-card"><i class="fa fa-briefcase"></i><h6 class="mb-0">Business Creators</h6></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Influencer Types End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Our Process</div>
+                    <h2 class="mb-5">How We Run Influencer Campaigns</h2>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-1.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="process-step"><span class="step-number">01</span><h5>Understand Brand Goal</h5><p class="lead-copy mb-0">We identify whether you need awareness, enquiries, footfall, product promotion, or launch visibility.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="process-step"><span class="step-number">02</span><h5>Find Right Creators</h5><p class="lead-copy mb-0">We shortlist creators whose audience, tone, niche, and content style match your brand.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="process-step"><span class="step-number">03</span><h5>Plan Content Brief</h5><p class="lead-copy mb-0">We prepare clear talking points, deliverables, campaign message, CTA, and brand guidelines.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="process-step"><span class="step-number">04</span><h5>Coordinate Execution</h5><p class="lead-copy mb-0">We manage schedules, approvals, posting timelines, creator communication, and campaign flow.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="process-step"><span class="step-number">05</span><h5>Publish & Amplify</h5><p class="lead-copy mb-0">Creator content goes live with the right caption, tags, CTA, story support, and brand visibility.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s"><div class="process-step"><span class="step-number">06</span><h5>Track & Report</h5><p class="lead-copy mb-0">We evaluate campaign performance and share insights for future creator-led growth.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Process End -->
+
+
+        <!-- Why Choose Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Why Choose Scalixo</div>
+                        <h2 class="mb-4">Influencer Marketing With Strategy, Not Random Collaborations</h2>
+                        <p class="lead-copy mb-4">We focus on choosing the right creators, creating clear campaign messaging, and making influencer content support real business goals.</p>
+                        <a class="btn btn-dark-pill py-3 px-5" href="contact.html">Start Your Campaign</a>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-2.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-3.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-4.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-2.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-3.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-4.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-1.jpg" alt="">
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-search text-white"></i></div><div><h6>Right Creator Fit</h6><span>We match creators with your audience, category, location, and brand tone.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-check-circle text-white"></i></div><div><h6>Authentic Promotion</h6><span>Content feels natural, relatable, and trustworthy instead of forced advertising.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-bullhorn text-white"></i></div><div><h6>Strong Campaign Brief</h6><span>Every creator gets clear messaging, deliverables, CTA, and brand direction.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-comments text-white"></i></div><div><h6>Smooth Coordination</h6><span>We manage creator communication so your campaign runs professionally.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-chart-bar text-white"></i></div><div><h6>Performance Review</h6><span>We track campaign response and learn what content creates better impact.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-rocket text-white"></i></div><div><h6>Growth-Focused Approach</h6><span>Campaigns are planned for awareness, trust, enquiries, and long-term brand growth.</span></div></div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
-        
+        <!-- Why Choose End -->
+
+
+        <!-- Results Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Results You Can Expect</div>
+                    <h2 class="mb-5">What Influencer Campaign Success Looks Like</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="result-card"><i class="fa fa-eye"></i><h5>Higher Brand Awareness</h5><p class="lead-copy mb-0">Reach new audiences through creators your target customers already follow.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="result-card"><i class="fa fa-heart"></i><h5>Better Brand Trust</h5><p class="lead-copy mb-0">Authentic recommendations help your business feel more credible and approachable.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="result-card"><i class="fa fa-comments"></i><h5>More Engagement</h5><p class="lead-copy mb-0">Creator content can increase comments, shares, saves, profile visits, and conversations.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="result-card"><i class="fa fa-user-plus"></i><h5>New Audience Growth</h5><p class="lead-copy mb-0">Drive relevant followers and community attention from creator-led discovery.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="result-card"><i class="fa fa-phone-alt"></i><h5>Qualified Enquiries</h5><p class="lead-copy mb-0">Campaigns can be planned around WhatsApp messages, calls, website visits, or bookings.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s"><div class="result-card"><i class="fa fa-photo-video"></i><h5>Reusable Content Assets</h5><p class="lead-copy mb-0">Creator videos and testimonials can support ads, social media, and future campaigns.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Results End -->
+
+
+        <!-- Campaign Types Start -->
+        <div class="container-xxl py-6 section-soft" id="portfolio">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Campaign Types</div>
+                    <h2 class="mb-3">Influencer Campaigns We Can Build</h2>
+                    <p class="lead-copy mb-5">Choose a creator campaign based on your current business goal, launch plan, or brand growth stage.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-store"></i></div><h5>Local Business Promotions</h5><p class="lead-copy">For salons, cafes, clinics, real estate brands, restaurants, and local service businesses that want visibility and footfall.</p><a class="btn btn-dark-pill" href="contact.html">Plan Campaign</a></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-gift"></i></div><h5>Product Launch Campaigns</h5><p class="lead-copy">For brands launching a new product, service, offer, collection, event, or experience with creator support.</p><a class="btn btn-dark-pill" href="contact.html">Plan Campaign</a></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-video"></i></div><h5>Reels Collaboration Campaigns</h5><p class="lead-copy">For high-reach short-form content that introduces your brand in a relatable, engaging, and trust-building way.</p><a class="btn btn-dark-pill" href="contact.html">Plan Campaign</a></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Campaign Types End -->
+
+
+        <!-- Faq Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Faq</div>
+                    <h2 class="mb-5">Influencer Marketing Questions</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="influencerFaq">
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq1">What is influencer marketing?</button></h2><div id="Faq1" class="accordion-collapse collapse show" data-bs-parent="#influencerFaq"><div class="accordion-body">Influencer marketing is a strategy where brands collaborate with creators to promote products, services, offers, or experiences through trusted content.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq2">Do you find influencers for our brand?</button></h2><div id="Faq2" class="accordion-collapse collapse" data-bs-parent="#influencerFaq"><div class="accordion-body">Yes. We shortlist suitable creators based on your niche, location, audience, content quality, budget, and campaign goal.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq3">Which businesses can use influencer marketing?</button></h2><div id="Faq3" class="accordion-collapse collapse" data-bs-parent="#influencerFaq"><div class="accordion-body">Influencer marketing works well for salons, cafes, restaurants, real estate, fashion, beauty, healthcare, education, events, e-commerce, and local businesses.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq4">Do you manage the complete campaign?</button></h2><div id="Faq4" class="accordion-collapse collapse" data-bs-parent="#influencerFaq"><div class="accordion-body">Yes. We manage creator shortlisting, briefing, coordination, content approvals, posting timeline, and performance review.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq5">Can influencer content be used for ads?</button></h2><div id="Faq5" class="accordion-collapse collapse" data-bs-parent="#influencerFaq"><div class="accordion-body">Yes, influencer content can often be repurposed for social proof, website sections, reels, stories, and paid ad creatives, depending on campaign terms and permissions.</div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Faq End -->
+
+
+        <!-- CTA Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 760px;">
+                    <div class="section-label mb-3">Ready To Collaborate?</div>
+                    <h2 class="mb-4">Ready To Grow Your Brand With Creator-Led Campaigns?</h2>
+                    <p class="lead-copy mb-4">Let's plan an influencer marketing campaign that builds trust, reaches the right audience, and turns attention into measurable business growth.</p>
+                    <a href="contact.html" class="btn btn-dark-pill py-3 px-5">Book Free Consultation</a>
+                </div>
+            </div>
+        </div>
+        <!-- CTA End -->
+
 
         <!-- Footer Start -->
-       <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+         <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
@@ -241,18 +434,20 @@
                         <a class="btn btn-link" href="about.html">About Us</a>
                         <a class="btn btn-link" href="#services">Services</a>
                         <a class="btn btn-link" href="#portfolio">Portfolio</a>
-                        <a class="btn btn-link" href="faq.html">Faq</a>
+                        <a class="btn btn-link" href="Faq.html">Faq</a>
                         <a class="btn btn-link" href="contact.html">Contact</a>
                     </div>
 
                     <div class="col-md-6 col-lg-3">
                         <h5 class="mb-4">Services</h5>
-                        <a class="btn btn-link" href="#services">Social Media Marketing</a>
-                        <a class="btn btn-link" href="#services">Performance Marketing</a>
-                        <a class="btn btn-link" href="#services">SEO</a>
-                        <a class="btn btn-link" href="#services">Website Development</a>
-                        <a class="btn btn-link" href="#services">Branding</a>
-                        <a class="btn btn-link" href="#services">Influencer Marketing</a>
+                        <a class="btn btn-link" href="social-media-marketing.html">Social Media Marketing</a>
+                        <a class="btn btn-link" href="performance-marketing.html">Performance Marketing</a>
+                        <a class="btn btn-link" href="seo.html">SEO</a>
+                        <a class="btn btn-link" href="website-development.html">Website Development</a>
+                        <a class="btn btn-link" href="branding.html">Branding</a>
+                        <a class="btn btn-link" href="influencer-marketing.html">Influencer Marketing</a>
+                        <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        <a class="btn btn-link" href="terms-and-conditions.html">Terms & Conditions</a>
                     </div>
 
                     <div class="col-md-6 col-lg-3">

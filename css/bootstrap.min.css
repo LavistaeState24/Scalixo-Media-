@@ -2517,7 +2517,8 @@ textarea.form-control-lg {
 
 .form-check-input:checked {
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -3083,7 +3084,8 @@ fieldset:disabled .btn {
 .btn-primary {
     color: #000;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .btn-primary:hover {
@@ -3122,7 +3124,8 @@ fieldset:disabled .btn {
 .btn-primary.disabled {
     color: #000;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .btn-secondary {
@@ -3442,13 +3445,15 @@ fieldset:disabled .btn {
 
 .btn-outline-primary {
     color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .btn-outline-primary:hover {
     color: #000;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .btn-check:focus+.btn-outline-primary,
@@ -3463,7 +3468,8 @@ fieldset:disabled .btn {
 .btn-outline-primary.dropdown-toggle.show {
     color: #000;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .btn-check:checked+.btn-outline-primary:focus,
@@ -4138,7 +4144,8 @@ fieldset:disabled .btn {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #00B98E
+    background-color: #233044
+
 }
 
 .dropdown-item.disabled,
@@ -4168,25 +4175,26 @@ fieldset:disabled .btn {
 }
 
 .dropdown-menu-dark {
-    color: #dee2e6;
+    color: var(--scalixo-dark);
     background-color: #343a40;
     border-color: rgba(0, 0, 0, 0.15)
 }
 
 .dropdown-menu-dark .dropdown-item {
-    color: #dee2e6
+    color: var(--scalixo-dark);
 }
 
 .dropdown-menu-dark .dropdown-item:hover,
 .dropdown-menu-dark .dropdown-item:focus {
-    color: #fff;
+     color: var(--scalixo-light);
     background-color: rgba(255, 255, 255, 0.15)
 }
 
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
     color: #fff;
-    background-color: #00B98E
+    background-color: #233044
+
 }
 
 .dropdown-menu-dark .dropdown-item.disabled,
@@ -4395,7 +4403,8 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #00B98E
+    background-color: # 233044
+
 }
 
 .nav-fill>.nav-link,
@@ -5187,7 +5196,8 @@ fieldset:disabled .btn {
     z-index: 3;
     color: #fff;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .page-item.disabled .page-link {
@@ -5486,7 +5496,8 @@ fieldset:disabled .btn {
     z-index: 2;
     color: #fff;
     background-color: #233044;
-    border-color: #00B98E
+    border-color: # 233044
+
 }
 
 .list-group-item+.list-group-item {
@@ -6885,7 +6896,8 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-    color: #00B98E
+    color: #233044
+
 }
 
 .link-primary:hover,
@@ -7311,7 +7323,8 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #00B98E !important
+    border-color: # 233044
+ !important
 }
 
 .border-secondary {

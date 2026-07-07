@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SEO Services - Scalixo Media</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="SEO services by Scalixo Media for search engine optimization, keyword strategy, technical SEO, on-page SEO, local SEO, content optimization, and organic growth." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .service-card, .platform-card, .result-card, .portfolio-card {
+            background: #fff;
+            border-radius: 22px;
+            border: 1px solid rgba(0,0,0,.06);
+            box-shadow: 0 10px 35px rgba(0,0,0,.06);
+            transition: .3s ease;
+            height: 100%;
+        }
+        .service-card:hover, .platform-card:hover, .result-card:hover, .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 50px rgba(0,0,0,.10);
+        }
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+        .platform-card {
+            padding: 26px 18px;
+            text-align: center;
+        }
+        .platform-card i {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        .process-step {
+            position: relative;
+            padding: 30px;
+            border-radius: 22px;
+            background: #fff;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,.06);
+        }
+        .step-number {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+        .result-card {
+            padding: 26px;
+        }
+        .result-card i {
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 14px;
+        }
+        .portfolio-card {
+            padding: 32px;
+            text-align: center;
+        }
+        .portfolio-card .play-icon {
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 22px;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        @media (max-width: 991px) {
+            .page-header { padding-top: 110px; padding-bottom: 70px; }
+            .section-title, .display-5 { font-size: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 fixed-top">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Scalixo<span style="font-weight:500;">Media</span></h1>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <div class="dropdown-menu border-0 shadow rounded-3 mt-2">
+
+                                <a href="social-media-marketing.html" class="dropdown-item">
+                                    
+                                    Social Media Marketing
+                                </a>
+
+                                <a href="performance-marketing.html" class="dropdown-item">
+                                   Performance Marketing
+                                </a>
+
+                                <a href="seo.html" class="dropdown-item active">
+                                    Search Engine Optimization
+                                </a>
+
+                                <a href="website-development.html" class="dropdown-item">
+                                    Website Development
+                                </a>
+
+                                <a href="branding.html" class="dropdown-item">
+                                   
+                                    Branding & Identity Design
+                                </a>
+
+                                <a href="influencer-marketing.html" class="dropdown-item">
+                                    Influencer Marketing
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                        <a href="Faq.html" class="nav-item nav-link">Faq</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="contact.html" class="btn btn-dark-pill ms-lg-4">Get Free Consultation</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary page-header">
+                <div class="container text-center">
+                    <h1 class="text-white animated zoomIn mt-5">Search Engine Optimization</h1>
+                    <p class="text-white mb-0 animated fadeInUp">Rank higher, attract organic traffic, and turn search visibility into business growth.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+
+        <!-- SEO Hero Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Search Engine Optimization</div>
+                        <h2 class="display-5 mb-4">SEO That Helps Your Brand Get Found By The Right Customers</h2>
+                        <p class="lead-copy mb-4">
+                            Scalixo Media helps businesses improve search visibility, attract qualified organic traffic,
+                            and build long-term digital authority with practical SEO strategies. From keyword research
+                            to technical fixes and content optimization, we make your website easier to discover,
+                            understand, and trust.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-dark-pill py-3 px-5" href="contact.html">Get Free SEO Audit</a>
+                            <a class="btn btn-light-pill py-3 px-5" href="#services">Explore SEO Services</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center wow zoomIn" data-wow-delay="0.2s">
+                        <img class="img-fluid rounded" src="img/Search engines-amico.png" alt="SEO strategy and organic growth by Scalixo Media">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SEO Hero End -->
+
+
+        <!-- Why SEO Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Why SEO Matters</div>
+                        <h2 class="mb-4">Your Customers Are Searching. Your Brand Should Be Visible.</h2>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="lead-copy mb-3">
+                            Paid ads can bring quick traffic, but SEO builds long-term visibility. When your website
+                            ranks for the right keywords, your business gets discovered by people who are already
+                            searching for your services.
+                        </p>
+                        <p class="lead-copy mb-0">
+                            At Scalixo Media, we focus on SEO that supports real business growth: better rankings,
+                            stronger website structure, useful content, local visibility, and higher-quality organic enquiries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why SEO End -->
+
+
+        <!-- What We Offer Start -->
+        <div class="container-xxl py-6" id="services">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 760px;">
+                    <div class="section-label mb-3">What We Offer</div>
+                    <h2 class="mb-3">Complete SEO Services For Sustainable Growth</h2>
+                    <p class="lead-copy mb-5">We improve your website from every angle: keywords, content, technical performance, local presence, and authority building.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-search"></i></div>
+                            <h5>Keyword Research & Strategy</h5>
+                            <p class="lead-copy mb-0">We find the search terms your customers use and build an SEO roadmap around high-intent keywords.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-file-alt"></i></div>
+                            <h5>On-Page SEO</h5>
+                            <p class="lead-copy mb-0">Meta titles, descriptions, headings, internal links, image alt text, and page structure optimized for search.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-cogs"></i></div>
+                            <h5>Technical SEO</h5>
+                            <p class="lead-copy mb-0">We improve site speed, crawlability, indexing, mobile usability, schema, sitemap, and technical health.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-pen-nib"></i></div>
+                            <h5>SEO Content Optimization</h5>
+                            <p class="lead-copy mb-0">Website copy, blogs, service pages, and landing pages optimized to answer real user queries.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h5>Local SEO</h5>
+                            <p class="lead-copy mb-0">Google Business Profile, local keywords, location pages, and map visibility for city-based growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-card p-4">
+                            <div class="service-icon"><i class="fa fa-link"></i></div>
+                            <h5>Authority & Link Building</h5>
+                            <p class="lead-copy mb-0">Build credibility with ethical authority signals, citations, content assets, and quality backlink opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What We Offer End -->
+
+
+        <!-- SEO Focus Areas Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">SEO Focus Areas</div>
+                    <h2 class="mb-5">Where We Improve Your Search Presence</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.1s"><div class="platform-card"><i class="fa fa-globe"></i><h6 class="mb-0">Website SEO</h6></div></div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.2s"><div class="platform-card"><i class="fa fa-map-marked-alt"></i><h6 class="mb-0">Local SEO</h6></div></div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.3s"><div class="platform-card"><i class="fa fa-mobile-alt"></i><h6 class="mb-0">Mobile SEO</h6></div></div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.4s"><div class="platform-card"><i class="fa fa-newspaper"></i><h6 class="mb-0">Blog SEO</h6></div></div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.5s"><div class="platform-card"><i class="fa fa-shopping-bag"></i><h6 class="mb-0">E-commerce SEO</h6></div></div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.6s"><div class="platform-card"><i class="fa fa-chart-line"></i><h6 class="mb-0">Analytics</h6></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- SEO Focus Areas End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                    <div class="section-label mb-3">Our Process</div>
+                    <h2 class="mb-5">How We Build Your SEO Growth System</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="process-step"><span class="step-number">01</span><h5>Audit Your Website</h5><p class="lead-copy mb-0">We analyze current rankings, speed, indexing, technical issues, content gaps, and competitor visibility.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="process-step"><span class="step-number">02</span><h5>Research Keywords</h5><p class="lead-copy mb-0">We identify business-relevant keywords based on intent, competition, location, and conversion potential.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="process-step"><span class="step-number">03</span><h5>Fix Technical Issues</h5><p class="lead-copy mb-0">We improve crawlability, speed, mobile experience, URL structure, schema, sitemap, and on-site SEO health.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="process-step"><span class="step-number">04</span><h5>Optimize Pages</h5><p class="lead-copy mb-0">We improve headings, meta tags, copy, internal linking, images, and service page structure.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="process-step"><span class="step-number">05</span><h5>Create Content Plan</h5><p class="lead-copy mb-0">We plan blogs, service pages, Faqs, and topic clusters that answer customer questions and build authority.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s"><div class="process-step"><span class="step-number">06</span><h5>Track & Improve</h5><p class="lead-copy mb-0">We monitor rankings, traffic, conversions, and search performance, then continuously optimize.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Process End -->
+
+
+        <!-- Why Choose Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-label mb-3">Why Scalixo Media</div>
+                        <h2 class="mb-4">SEO Built For Rankings, Traffic, And Real Enquiries</h2>
+                        <p class="lead-copy">We do not treat SEO as a one-time checklist. We build a long-term growth system that improves your website, content, and search authority step by step.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-lightbulb text-white"></i></div><div><h6>Strategy First</h6><span>Every SEO action is connected to your business goals and customer intent.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-tools text-white"></i></div><div><h6>Technical Clarity</h6><span>We fix issues that stop search engines and users from understanding your website.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-pen text-white"></i></div><div><h6>Useful Content</h6><span>We create and optimize content that answers what your audience actually searches.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-map-marker-alt text-white"></i></div><div><h6>Local Growth</h6><span>Perfect for businesses that want more visibility in Ahmedabad and target cities.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-file-alt text-white"></i></div><div><h6>Transparent Reports</h6><span>You get clear updates on rankings, traffic, improvements, and next actions.</span></div></div></div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s"><div class="d-flex"><div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"><i class="fa fa-seedling text-white"></i></div><div><h6>Long-Term Growth</h6><span>SEO builds compounding visibility that supports your brand beyond paid ads.</span></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why Choose End -->
+
+
+        <!-- Results Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Results You Can Expect</div>
+                    <h2 class="mb-5">What SEO Success Looks Like</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="result-card"><i class="fa fa-arrow-up"></i><h5>Higher Search Rankings</h5><p class="lead-copy mb-0">Improve visibility for keywords your potential customers are searching for.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="result-card"><i class="fa fa-users"></i><h5>More Organic Traffic</h5><p class="lead-copy mb-0">Attract visitors without relying only on paid advertising every month.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="result-card"><i class="fa fa-phone-alt"></i><h5>Better Enquiry Quality</h5><p class="lead-copy mb-0">Reach people who already have intent and are actively searching for solutions.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="result-card"><i class="fa fa-bolt"></i><h5>Improved Website Health</h5><p class="lead-copy mb-0">Better speed, structure, indexing, and mobile experience for users and search engines.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="result-card"><i class="fa fa-star"></i><h5>Stronger Brand Trust</h5><p class="lead-copy mb-0">Ranking organically helps your brand look more credible and established.</p></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s"><div class="result-card"><i class="fa fa-chart-line"></i><h5>Long-Term Growth</h5><p class="lead-copy mb-0">Build compounding search visibility that supports growth month after month.</p></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Results End -->
+
+
+        <!-- SEO Packages Focus Start -->
+        <div class="container-xxl py-6 section-soft" id="portfolio">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">SEO Focus</div>
+                    <h2 class="mb-3">SEO Plans We Can Build For Your Brand</h2>
+                    <p class="lead-copy mb-5">Choose the SEO direction that matches your current website stage and business goal.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-search-location"></i></div><h5>Local SEO Growth</h5><p class="lead-copy">For businesses that want stronger visibility in local searches, maps, and city-based keywords.</p><a class="btn btn-dark-pill" href="contact.html">Start SEO</a></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-building"></i></div><h5>Service Business SEO</h5><p class="lead-copy">For agencies, clinics, salons, real estate, consultants, and local service providers.</p><a class="btn btn-dark-pill" href="contact.html">Start SEO</a></div></div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="portfolio-card"><div class="play-icon"><i class="fa fa-shopping-cart"></i></div><h5>E-commerce SEO</h5><p class="lead-copy">For online stores that want better category, product, blog, and search visibility.</p><a class="btn btn-dark-pill" href="contact.html">Start SEO</a></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- SEO Packages Focus End -->
+
+
+        <!-- Faq Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <div class="section-label mb-3">Faq</div>
+                    <h2 class="mb-5">SEO Questions</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="seoFaq">
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq1">What is SEO?</button></h2><div id="Faq1" class="accordion-collapse collapse show" data-bs-parent="#seoFaq"><div class="accordion-body">SEO means optimizing your website so it can rank better on search engines and attract organic traffic from people searching for your products or services.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq2">How long does SEO take?</button></h2><div id="Faq2" class="accordion-collapse collapse" data-bs-parent="#seoFaq"><div class="accordion-body">SEO is a long-term growth channel. Some improvements can be visible within weeks, but strong ranking and traffic growth generally needs consistent work over a few months.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq3">Do you provide local SEO?</button></h2><div id="Faq3" class="accordion-collapse collapse" data-bs-parent="#seoFaq"><div class="accordion-body">Yes. We optimize Google Business Profile, local keywords, location pages, citations, reviews, and map visibility for city-based businesses.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm mb-3 rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq4">Will you write SEO content?</button></h2><div id="Faq4" class="accordion-collapse collapse" data-bs-parent="#seoFaq"><div class="accordion-body">Yes. We can create and optimize service pages, blogs, Faqs, landing pages, and website content based on keyword strategy and user intent.</div></div></div>
+                            <div class="accordion-item border-0 shadow-sm rounded"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#Faq5">Do you share SEO reports?</button></h2><div id="Faq5" class="accordion-collapse collapse" data-bs-parent="#seoFaq"><div class="accordion-body">Yes. We provide clear SEO reports covering ranking movement, organic traffic, website improvements, technical fixes, and next-step recommendations.</div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Faq End -->
+
+
+        <!-- CTA Start -->
+        <div class="container-xxl py-6 section-soft">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 760px;">
+                    <div class="section-label mb-3">Ready To Rank?</div>
+                    <h2 class="mb-4">Ready To Grow Your Website With SEO?</h2>
+                    <p class="lead-copy mb-4">Let's build an SEO strategy that improves visibility, attracts qualified visitors, and supports long-term business growth.</p>
+                    <a href="contact.html" class="btn btn-dark-pill py-3 px-5">Book Free SEO Consultation</a>
+                </div>
+            </div>
+        </div>
+        <!-- CTA End -->
+
+
+        <!-- Footer Start -->
+         <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="mb-4 fw-bold">ScalixoMedia</h4>
+                        <p class="mb-4">Grow your brand. Dominate your market. Scale with Scalixo Media, a full-service
+                            digital marketing agency focused on measurable business growth.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-dark btn-social me-2" href="#"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="#services">Services</a>
+                        <a class="btn btn-link" href="#portfolio">Portfolio</a>
+                        <a class="btn btn-link" href="Faq.html">Faq</a>
+                        <a class="btn btn-link" href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Services</h5>
+                        <a class="btn btn-link" href="social-media-marketing.html">Social Media Marketing</a>
+                        <a class="btn btn-link" href="performance-marketing.html">Performance Marketing</a>
+                        <a class="btn btn-link" href="seo.html">SEO</a>
+                        <a class="btn btn-link" href="website-development.html">Website Development</a>
+                        <a class="btn btn-link" href="branding.html">Branding</a>
+                        <a class="btn btn-link" href="influencer-marketing.html">Influencer Marketing</a>
+                        <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        <a class="btn btn-link" href="terms-and-conditions.html">Terms & Conditions</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="mb-4">Get In Touch</h5>
+                        <p><strong>Address</strong><br>301, 3rd Floor, Harvy Complex,<br>Subhash Chowk, Gurukul
+                            Rd,<br>Memnagar, Ahmedabad, Gujarat 380052</p>
+                        <p><strong>Phone</strong><br>+91 93287 92160</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright border-top pt-4">
+                    <div class="row">
+                        <div class="col-lg-6 text-start mb-2">© 2026 <strong>Scalixo Media</strong>. All Rights
+                            Reserved.
+                        </div>
+                        <div class="col-lg-6 text-end">Designed & Developed by <strong>Lavista Marketing</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
