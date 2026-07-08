@@ -51,7 +51,7 @@ body {
 }
 
 .lead-copy {
-    color: var(--scalixo-muted);
+    color: var(--scalixo-text);
     line-height: 1.8;
 }
 
@@ -372,7 +372,7 @@ body {
         height: 2px;
         bottom: 10px;
         left: 0;
-        background: #FFFFFF;
+        background: #233044;
         opacity: 0;
         transition: .5s;
     }
@@ -872,15 +872,15 @@ body {
 }
 
 .service-icon {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--primary);
     color: #fff;
-    font-size: 24px;
+    font-size: 12px;
     margin-bottom: 22px;
 }
 
@@ -951,7 +951,7 @@ body {
 
 @media (max-width: 991px) {
     .page-header {
-        padding-top: 110px;
+        padding-top: 70px;
         padding-bottom: 70px;
     }
 
