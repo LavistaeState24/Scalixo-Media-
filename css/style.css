@@ -3,9 +3,6 @@
     --primary: #233044;
     --light: #F3F6F8;
     --dark: #233044;
-}
-
-:root {
     --scalixo-dark: #233044;
     --scalixo-text: #243248;
     --scalixo-muted: #6f7785;
@@ -594,7 +591,7 @@ body {
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--scalixo-light);
+    color: var(--light);
     background:var(--scalixo-dark);
 }
 
