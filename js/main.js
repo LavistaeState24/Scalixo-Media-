@@ -141,3 +141,16 @@ Please contact me regarding my enquiry.`;
         );
     });
 }
+
+/***  up button ***/
+
+document.querySelectorAll('.Faq-button').forEach((button) => {
+    button.addEventListener('click', () => {
+        const currentItem = button.closest('.Faq-item');
+
+        document.querySelectorAll('.Faq-item').forEach((item) => {
+            if (item !== currentItem) item.classList.remove('active');
+        });
+        currentItem.classList.toggle('active');
+    });
+});
