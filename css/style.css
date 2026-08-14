@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #233044;
+    --primary: #1c58e3;
     --light: #F3F6F8;
-    --dark: #233044;
-    --scalixo-dark: #233044;
+    --dark: #1c58e3;
+    --scalixo-dark: #1c58e3;
     --scalixo-text: #243248;
     --scalixo-muted: #6f7785;
     --scalixo-soft: #f7f4ef;
@@ -372,7 +372,7 @@ body {
         height: 2px;
         bottom: 10px;
         left: 0;
-        background: #233044;
+        background: #1c58e3;
         opacity: 0;
         transition: .5s;
     }
